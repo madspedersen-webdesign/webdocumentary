@@ -1,0 +1,370 @@
+html,
+body {
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+#particles-js {
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/forest.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.falling-leaves {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -8%;
+    width: 100%;
+    max-width: 100%;
+    max-height: 800px;
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+}
+
+.leaf-scene {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.leaf-scene div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background: url(http://sarahmhigley.com/static/images/leaf.svg) no-repeat;
+        background-size: 100%;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-backface-visibility: visible;
+    backface-visibility: visible;
+}
+
+#person {
+    width: 80%;
+    height: auto;
+    position: absolute;
+    top: 50px;
+    left: 150px;
+}
+
+.fadein {
+    animation: 3s ease 0s normal forwards 1 fadein;
+    -webkit-animation: 3s ease 0s normal forwards 1 fadein;
+    opacity: 1
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0
+    }
+
+    80% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fadein {
+    0% {
+        opacity: 0
+    }
+
+    80% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+#navn {
+    color: white;
+    font-size: 80px;
+    position: absolute;
+    top: 200px;
+    left: 350px;
+    font-family: 'Fredericka the Great', cursive;
+    text-shadow: 1px 1px 20px black;
+}
+
+#citat {
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    top: 350px;
+    left: 300px;
+    width: 65%;
+    font-family: 'Fredericka the Great', cursive;
+    text-shadow: 1px 1px 20px black;
+}
+
+/* Override UGG site */
+#main {
+    width: 100%;
+    padding: 0;
+}
+
+.content-asset p {
+    margin: 0 auto;
+}
+
+.breadcrumb {
+    display: none;
+}
+
+/* Helpers */
+/**************************/
+.margin-top-10 {
+    padding-top: 10px;
+}
+
+.margin-bot-10 {
+    padding-bottom: 10px;
+}
+
+/* Typography */
+/**************************/
+#parallax-world-of-ugg h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+
+#dea {
+    font-family: 'Oswald', sans-serif;
+    font-size: 35px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: black;
+    padding: 0;
+    margin: 0;
+}
+
+#parallax-world-of-ugg h2 {
+    font-family: 'Fredericka the Great', cursive;
+    text-shadow: 1px 1px 20px black;
+    font-size: 70px;
+    letter-spacing: 10px;
+    text-align: center;
+    color: white;
+    font-weight: 400;
+    text-transform: uppercase;
+    z-index: 10;
+    opacity: .9;
+}
+
+#parallax-world-of-ugg h3 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 14px;
+    line-height: 0;
+    font-weight: 400;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    color: black;
+}
+
+#parallax-world-of-ugg p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+#polina .citat {
+    font-family: cursive;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+#polina .deamarie {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.first-character {
+    font-weight: 400;
+    float: left;
+    font-size: 84px;
+    line-height: 64px;
+    padding-top: 4px;
+    padding-right: 8px;
+    padding-left: 3px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.sc {
+    color: #3b8595;
+}
+
+.ny {
+    color: #3d3c3a;
+}
+
+.atw {
+    color: #c48660;
+}
+
+/* Section - Title */
+/**************************/
+#parallax-world-of-ugg .title {
+    background: white;
+    padding: 60px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#parallax-world-of-ugg .title h1 {
+    font-size: 35px;
+    letter-spacing: 8px;
+}
+
+/* Section - Block */
+/**************************/
+#parallax-world-of-ugg .block {
+    background: white;
+    padding: 60px;
+    width: 91.6%;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+#parallax-world-of-ugg .block-gray {
+    background: #f2f2f2;
+    padding: 60px;
+}
+
+#parallax-world-of-ugg .section-overlay-mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.70;
+}
+
+/* Section - Parallax */
+/**************************/
+#parallax-world-of-ugg .parallax-one {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    background-attachment: fixed;
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+#parallax-world-of-ugg .parallax-two {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    background-image: url(https://images.unsplash.com/photo-1432163230927-a32e4fd5a326?dpr=1&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=);
+        background-attachment: fixed;
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#parallax-world-of-ugg .parallax-three {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    background-image: url(https://images.unsplash.com/photo-1440688807730-73e4e2169fb8?dpr=1&auto=format&fit=crop&w=1500&h=1001&q=80&cs=tinysrgb&crop=);
+        background-attachment: fixed;
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+/* Extras */
+/**************************/
+#parallax-world-of-ugg .line-break {
+    border-bottom: 1px solid black;
+    width: 150px;
+    margin: 0 auto;
+}
+
+video {
+    position: fixed;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: 100%;
+    height: auto;
+    z-index: -100;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: url('//demosthenes.info/assets/images/polina.jpg') no-repeat;
+    background-size: cover;
+    transition: 1s opacity;
+}
+
+.stopfade {
+    opacity: .5;
+}
+
+#polina {
+    font-weight: 100;
+    background: rgba(0, 0, 0, 0.3);
+    color: white;
+    padding: 20px;
+    width: 33%;
+    margin: 20px;
+    float: right;
+    font-size: 1.2rem;
+    border-radius: 5px 5px;
+}
+
+h1 {
+    color: white solid;
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin-top: 0;
+    letter-spacing: .3rem;
+}
+
+/* LINKS */
+
+a{
+    color: white;
+}
+
+/* VIDEO 2 */
+
+#video2{
+    z-index: -200;
+}
